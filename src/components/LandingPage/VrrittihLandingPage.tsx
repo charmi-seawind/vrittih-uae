@@ -202,6 +202,8 @@ const VrrittihLandingPage = () => {
     "Smarter Application Experience",
     "One-Click Easy Withdraw from applied jobs when required",
     "Real-Time Application Status - track every stage of your application instantly",
+      "Personalized Job Recommendations based on your profile, skills, and activity",
+  "Instant Job Alerts & Notifications so you never miss relevant opportunities",
   ];
 
   const employerData = [
@@ -572,7 +574,7 @@ const VrrittihLandingPage = () => {
                 text-2xl 
                 sm:text-3xl 
                 md:text-4xl 
-                font-bold 
+                font-semibold 
                 text-gray-900 
                 mb-4 
                 leading-tight
@@ -663,7 +665,7 @@ const VrrittihLandingPage = () => {
           {/* Header Section */}
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-8 gap-4">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 ">
+              <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 ">
                 Our Strengths
               </h2>
             </div>
@@ -729,7 +731,7 @@ const VrrittihLandingPage = () => {
       <section className="pb-10 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="max-w-[1500px] mx-auto px-4 sm:px-6 ">
           <div className="text-start py-5">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 ">
+            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 ">
               Our Featured
             </h2>
           </div>
@@ -783,7 +785,7 @@ const VrrittihLandingPage = () => {
             text-2xl 
             sm:text-3xl 
             md:text-4xl 
-            font-bold 
+           font-semibold
             text-gray-900 
             leading-tight 
             mb-5 

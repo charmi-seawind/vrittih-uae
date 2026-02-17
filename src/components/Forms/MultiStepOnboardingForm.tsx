@@ -786,11 +786,11 @@ const MultiStepOnboardingForm = ({ onComplete, isAdminCreated = false }: MultiSt
                     </div>
                   ))}
                 </div>
-                <div className="flex justify-center mt-4">
+                {/* <div className="flex justify-center mt-4">
                   <p className="text-xs text-gray-600">
                     <span className="text-red-500">*</span> means Required Fields
                   </p>
-                </div>
+                </div> */}
               </div>
             )}
           </div>

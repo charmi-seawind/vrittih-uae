@@ -27,6 +27,19 @@ const SimplePersonalInfoForm = ({ resumeData, setResumeData, showOtpVerification
   const [showSalaryFields, setShowSalaryFields] = useState(
     !!(resumeData.expectedSalary || resumeData.currentSalary)
   );
+  const [countryCode, setCountryCode] = useState("+971");
+
+  const countries = [
+    { code: "+971", flag: "https://flagcdn.com/w20/ae.png", name: "UAE" },
+    { code: "+91", flag: "https://flagcdn.com/w20/in.png", name: "India" },
+    { code: "+1", flag: "https://flagcdn.com/w20/us.png", name: "USA" },
+    { code: "+44", flag: "https://flagcdn.com/w20/gb.png", name: "UK" },
+    { code: "+966", flag: "https://flagcdn.com/w20/sa.png", name: "Saudi Arabia" },
+    { code: "+974", flag: "https://flagcdn.com/w20/qa.png", name: "Qatar" },
+    { code: "+965", flag: "https://flagcdn.com/w20/kw.png", name: "Kuwait" },
+    { code: "+968", flag: "https://flagcdn.com/w20/om.png", name: "Oman" },
+    { code: "+973", flag: "https://flagcdn.com/w20/bh.png", name: "Bahrain" },
+  ];
 
   const currentYear = new Date().getFullYear();
   const years = Array.from({ length: 70 }, (_, i) => currentYear - 18 - i);
@@ -207,20 +220,43 @@ const SimplePersonalInfoForm = ({ resumeData, setResumeData, showOtpVerification
         </div>
         <div>
           <Label>Phone <span className="text-red-500">*</span></Label>
-          <Input
-            type="tel"
-            maxLength={10}
-            value={resumeData.phone}
-            onChange={(e) => {
-              const value = e.target.value.replace(/\D/g, '');
-              setResumeData({ ...resumeData, phone: value });
-              if (value.length === 10) {
-                clearFieldError('phone');
-              }
-            }}
-            placeholder="Enter 10 digit phone"
-            className={errors.phone ? 'border-red-500' : ''}
-          />
+          <div className="flex">
+            <Select value={countryCode} onValueChange={setCountryCode}>
+              <SelectTrigger className={`w-[120px] rounded-r-none border-r-0 ${errors.phone ? 'border-red-500' : ''}`}>
+                <SelectValue>
+                  <div className="flex items-center gap-2">
+                    <img src={countries.find(c => c.code === countryCode)?.flag} alt="" className="w-5 h-4" />
+                    <span>{countryCode}</span>
+                  </div>
+                </SelectValue>
+              </SelectTrigger>
+              <SelectContent>
+                {countries.map((country) => (
+                  <SelectItem key={country.code} value={country.code}>
+                    <div className="flex items-center gap-2">
+                      <img src={country.flag} alt={country.name} className="w-5 h-4" />
+                      <span>{country.code}</span>
+                      <span className="text-gray-500 text-xs">({country.name})</span>
+                    </div>
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+            <Input
+              type="tel"
+              maxLength={10}
+              value={resumeData.phone}
+              onChange={(e) => {
+                const value = e.target.value.replace(/\D/g, '');
+                setResumeData({ ...resumeData, phone: value });
+                if (value.length === 10) {
+                  clearFieldError('phone');
+                }
+              }}
+              placeholder="Enter 10 digit phone"
+              className={`flex-1 rounded-l-none ${errors.phone ? 'border-red-500' : ''}`}
+            />
+          </div>
           {showErrors && errors.phone ? (
             <p className="text-xs text-red-500 mt-1">{errors.phone}</p>
           ) : (
@@ -301,7 +337,7 @@ const SimplePersonalInfoForm = ({ resumeData, setResumeData, showOtpVerification
         </div>
       </div>
 
-      <div className="grid  grid-cols-1 md:grid-cols-2 py-5 gap-4">
+      <div className="grid  grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <Label>Job Title <span className="text-red-500 mt-7 md:mt-0">*</span></Label>
           <Input

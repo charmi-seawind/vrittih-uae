@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-// import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { METADATA_CONFIG } from "@/config/metadata";
 import ThemeProvider from "@/context/ThemeProvider";
@@ -8,7 +8,11 @@ import Toaster from "@/components/ui/toaster";
 import ReactQueryProvider from "@/context/ReactQueryProvider";
 import ConditionalLayout from "@/components/layout/ConditionalLayout";
 
-// const font = Inter({ subsets: ["latin"] });
+const poppins = Poppins({ 
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-poppins"
+});
 
 export const metadata: Metadata = METADATA_CONFIG;
 
@@ -44,7 +48,7 @@ export default function RootLayout({
       />
       <meta name="apple-mobile-web-app-title" content="Vrrittih" />
       <link rel="manifest" href="/favicon/site.webmanifest" />
-      <body className={`antialiased`} suppressHydrationWarning>
+      <body className={`${poppins.variable} font-sans antialiased`} suppressHydrationWarning>
         <ReactQueryProvider>
           <ThemeProvider
             attribute="class"
