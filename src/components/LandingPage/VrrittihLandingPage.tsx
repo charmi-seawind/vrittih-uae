@@ -69,7 +69,7 @@ const about = "/images/about-img.avif";
 const cubs = "/images/cubes.png";
 const whychooseimg = "/images/why-choose.jpg";
 const user1 = "/images/user-1.avif";
-const user2 = "/images/newsofgujarat.webp";
+const user2 = "/images/newsofDubai .webp";
 const user3 = "/images/the-phone.webp";
 const user4 = "/images/solitaire.png.webp";
 
@@ -324,7 +324,7 @@ const VrrittihLandingPage = () => {
   const data = [
     {
       id: 1,
-      name: "	News Of Gujarat",
+      name: "	News Of Dubai ",
       // role: "Entrepreneur",
       image: user2,
       text: "We chose Seawind Solution as our partner to completely rebuild our online presence. They have been a tremendous asset to our project and a vital partner that we lean on and trust. From day one their entire team has been outstanding. There is not a better feeling than to realize you made the right choice in situations as this and we did. Hats off to the team at Seawind.",
@@ -1256,120 +1256,7 @@ const VrrittihLandingPage = () => {
         </div>
       </section>
 
-      <section className="py-8 sm:py-10 bg-gray-50 overflow-hidden">
-        <div className="max-w-[1500px] mx-auto px-3 sm:px-4 md:px-6 relative">
-          <div className="relative text-center mb-4 flex flex-col items-center justify-center">
-            <div className="relative w-full">
-              <div className="text-start py-4 sm:py-5">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-start text-gray-900">
-                  What Our Clients Say !
-                </h2>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative group px-2 sm:px-4 md:px-12">
-            <button className="swiper-prev absolute left-0 top-1/2 -translate-y-1/2 z-20 text-gray-400 hover:text-[#004AAD] transition-colors hidden md:block">
-              <ChevronLeft size={40} strokeWidth={1.5} />
-            </button>
-
-            <button className="swiper-next absolute right-0 top-1/2 -translate-y-1/2 z-20 text-gray-400 hover:text-[#004AAD] transition-colors hidden md:block">
-              <ChevronRight size={40} strokeWidth={1.5} />
-            </button>
-
-            <Swiper
-              modules={[Navigation, Pagination, Autoplay]}
-              spaceBetween={24}
-              slidesPerView={1}
-              centeredSlides={true}
-              loop={true}
-              autoplay={{ delay: 4000 }}
-              pagination={{ clickable: true, el: ".custom-pagination" }}
-              navigation={{
-                nextEl: ".swiper-next",
-                prevEl: ".swiper-prev",
-              }}
-              breakpoints={{
-                640: { slidesPerView: 1 },
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
-              }}
-              className="testimonial-swiper"
-            >
-              {data.map((item) => (
-                <SwiperSlide
-                  key={item.id}
-                  className="transition-all duration-500 py-8 sm:py-10"
-                >
-                  {({ isActive }) => (
-                    <div
-                      className={`
-                      bg-white 
-                      rounded-xl 
-                      p-6 
-                      sm:p-8 
-                      shadow-sm 
-                      transition-all 
-                      duration-500 
-                      border 
-                      border-gray-100 
-                      flex 
-                      flex-col 
-                      items-center 
-                      text-center 
-                      ${
-                        isActive
-                          ? "scale-110 shadow-xl z-10 border-[#004AAD]"
-                          : "scale-90 opacity-40"
-                      }
-                    `}
-                    >
-                      <div className="flex items-center gap-3 sm:gap-4 mb-5 sm:mb-6 text-left w-full justify-center">
-                        <img
-                          src={item.image}
-                          alt={item.name}
-                          className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover border-4 border-orange-100 shadow-sm"
-                        />
-                        <div>
-                          <h4 className="font-bold text-gray-900 text-base sm:text-lg">
-                            {item.name}
-                          </h4>
-                          {/* <p className="text-gray-500 text-xs sm:text-sm">
-                            {item.role}
-                          </p> */}
-                        </div>
-                      </div>
-
-                      <p className="text-gray-600 leading-relaxed text-sm sm:text-[15px]">
-                        {item.text}
-                      </p>
-                    </div>
-                  )}
-                </SwiperSlide>
-              ))}
-            </Swiper>
-
-            {/* Custom Dots Pagination */}
-            <div className="custom-pagination flex justify-center gap-2 mt-4"></div>
-          </div>
-        </div>
-
-        {/* Pagination Styles */}
-        <style jsx global>{`
-          .custom-pagination .swiper-pagination-bullet {
-            width: 8px;
-            height: 8px;
-            background: #004aad;
-            opacity: 1;
-            transition: all 0.3s;
-          }
-          .custom-pagination .swiper-pagination-bullet-active {
-            background: #004aad;
-            width: 24px;
-            border-radius: 4px;
-          }
-        `}</style>
-      </section>
+     
 
       <section className="relative py-10 bg-white overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-6">

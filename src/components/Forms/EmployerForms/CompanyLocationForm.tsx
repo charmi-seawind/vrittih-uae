@@ -35,7 +35,7 @@ const industries = [
 
 const indianStates = {
   "Andhra Pradesh": ["Visakhapatnam", "Vijayawada", "Guntur", "Nellore", "Kurnool", "Rajahmundry", "Tirupati", "Kadapa", "Anantapur", "Vizianagaram"],
-  "Gujarat": ["Ahmedabad", "Surat", "Vadodara", "Rajkot", "Bhavnagar", "Jamnagar", "Junagadh", "Gandhinagar", "Anand", "Navsari"],
+  "Dubai ": ["Dubai", "Surat", "Vadodara", "Rajkot", "Bhavnagar", "Jamnagar", "Junagadh", "Gandhinagar", "Anand", "Navsari"],
   "Karnataka": ["Bangalore", "Mysore", "Hubli", "Mangalore", "Belgaum", "Gulbarga", "Davanagere", "Bellary", "Bijapur", "Shimoga"],
   "Maharashtra": ["Mumbai", "Pune", "Nagpur", "Thane", "Nashik", "Aurangabad", "Solapur", "Amravati", "Kolhapur", "Sangli"],
   "Tamil Nadu": ["Chennai", "Coimbatore", "Madurai", "Tiruchirappalli", "Salem", "Tirunelveli", "Erode", "Vellore", "Thoothukudi", "Dindigul"],
@@ -117,6 +117,19 @@ interface CompanyLocationFormProps {
 const CompanyLocationForm = ({ employerData, setEmployerData, errors = {}, onClearError }: CompanyLocationFormProps) => {
   const [isDetectingLocation, setIsDetectingLocation] = useState(false);
   const [showGstField, setShowGstField] = useState(!!employerData.gst_number);
+  const [countryCode, setCountryCode] = useState("+971");
+
+  const countries = [
+    { code: "+971", flag: "https://flagcdn.com/w20/ae.png", name: "UAE" },
+    { code: "+91", flag: "https://flagcdn.com/w20/in.png", name: "India" },
+    { code: "+1", flag: "https://flagcdn.com/w20/us.png", name: "USA" },
+    { code: "+44", flag: "https://flagcdn.com/w20/gb.png", name: "UK" },
+    { code: "+966", flag: "https://flagcdn.com/w20/sa.png", name: "Saudi Arabia" },
+    { code: "+974", flag: "https://flagcdn.com/w20/qa.png", name: "Qatar" },
+    { code: "+965", flag: "https://flagcdn.com/w20/kw.png", name: "Kuwait" },
+    { code: "+968", flag: "https://flagcdn.com/w20/om.png", name: "Oman" },
+    { code: "+973", flag: "https://flagcdn.com/w20/bh.png", name: "Bahrain" },
+  ];
 
   const handleInputChange = (field: keyof EmployerData, value: string) => {
     const sanitizedValue = value.replace(/<script[^>]*>.*?<\/script>/gi, '')
@@ -184,7 +197,7 @@ const CompanyLocationForm = ({ employerData, setEmployerData, errors = {}, onCle
   return (
     <Card>
       <CardContent className="p-6">
-        <div className="grid grid-cols-1 gap-6">
+        <div className="grid grid-cols-1 gap-4">
           {/* ✅ Additional Company Info */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
@@ -236,13 +249,37 @@ const CompanyLocationForm = ({ employerData, setEmployerData, errors = {}, onCle
             {/* ✅ Phone Field */}
             <div className="space-y-2">
               <Label htmlFor="phone">Phone Number <span className="text-red-500">*</span></Label>
-              <Input
-                id="phone"
-                value={employerData.phone}
-                onChange={(e) => handleInputChange("phone", e.target.value)}
-                placeholder="9876543210"
-                required
-              />
+              <div className="flex">
+                <Select value={countryCode} onValueChange={setCountryCode}>
+                  <SelectTrigger className="w-[120px] rounded-r-none border-r-0">
+                    <SelectValue>
+                      <div className="flex items-center gap-2">
+                        <img src={countries.find(c => c.code === countryCode)?.flag} alt="" className="w-5 h-4" />
+                        <span>{countryCode}</span>
+                      </div>
+                    </SelectValue>
+                  </SelectTrigger>
+                  <SelectContent>
+                    {countries.map((country) => (
+                      <SelectItem key={country.code} value={country.code}>
+                        <div className="flex items-center gap-2">
+                          <img src={country.flag} alt={country.name} className="w-5 h-4" />
+                          <span>{country.code}</span>
+                          <span className="text-gray-500 text-xs">({country.name})</span>
+                        </div>
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+                <Input
+                  id="phone"
+                  value={employerData.phone}
+                  onChange={(e) => handleInputChange("phone", e.target.value)}
+                  placeholder="9876543210"
+                  className="flex-1 rounded-l-none"
+                  required
+                />
+              </div>
             </div>
           </div>
 

@@ -403,7 +403,7 @@ const JobDetailsForm = ({ employerData, setEmployerData, errors = {}, onClearErr
                     <SelectContent>
                       <SelectItem value="English">English</SelectItem>
                       <SelectItem value="Hindi">Hindi</SelectItem>
-                      <SelectItem value="Gujarati">Gujarati</SelectItem>
+                      <SelectItem value="Dubai i">Dubai i</SelectItem>
                       <SelectItem value="Punjabi">Punjabi</SelectItem>
                       <SelectItem value="Tamil">Tamil</SelectItem>
                       <SelectItem value="Kannada">Kannada</SelectItem>

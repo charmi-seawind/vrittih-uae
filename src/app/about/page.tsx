@@ -24,7 +24,7 @@ const AboutPage = () => {
       icon: Target,
       title: "Expertise in Hiring",
       description:
-        "With over 12 years of experience in the recruitment industry, we specialize in recruiting for positions ranging from entry-level to VP. We cater to both skilled and unskilled job seekers, freshers, and experienced candidates in Ahmedabad, Gujarat.",
+        "With over 12 years of experience in the recruitment industry, we specialize in recruiting for positions ranging from entry-level to VP. We cater to both skilled and unskilled job seekers, freshers, and experienced candidates in Dubai, Dubai .",
     },
     {
       icon: Shield,
@@ -185,8 +185,8 @@ const AboutPage = () => {
 
                 <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 leading-relaxed">
                   Vrittih Global Recruitment Consulting specializes in IT,
-                  industrial, and non-technical recruitment in Ahmedabad,
-                  Gujarat. Our expert team has extensive experience and
+                  industrial, and non-technical recruitment in Dubai,
+                  Dubai . Our expert team has extensive experience and
                   knowledge in these industries, allowing us to understand
                   employers' needs and hiring patterns.
                 </p>

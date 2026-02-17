@@ -452,7 +452,7 @@ const MultiStepEmployerOnboardingForm = ({ onComplete }: MultiStepEmployerOnboar
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto p-3 md:p-6">
+    <div className="w-full max-w-4xl mx-auto p-3 md:p-4">
       <Card>
         <CardHeader className="pb-6">
           <div className="text-center space-y-4 max-w-2xl mx-auto">
@@ -475,7 +475,7 @@ const MultiStepEmployerOnboardingForm = ({ onComplete }: MultiStepEmployerOnboar
             </div>
 
             {!showOtpVerification && (
-              <div className="space-y-4 pt-6 border-t">
+              <div className="space-y-4 pt-2 border-t">
                 <div className="flex items-center justify-between">
                   {currentStep > 1 && currentStep !== 2 && currentStep !== 4 ? (
                     <Button variant="outline" size="sm" onClick={handlePrevious}>

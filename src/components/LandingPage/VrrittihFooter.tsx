@@ -68,11 +68,14 @@ const VrrittihFooter = () => {
           <div className="text-center sm:text-left">
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><Link href="/features" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">Seo Training</Link></li>
-              <li><Link href="/features" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">Php Training</Link></li>
-              <li><Link href="/features" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">It Training</Link></li>
-              <li><Link href="/features" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">Talent Acquisition</Link></li>
-              <li><Link href="/features" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">Recruitment</Link></li>
+              <li><Link href="/features" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">IT / Software</Link></li>
+              <li><Link href="/features" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">Sales & Marketing</Link></li>
+              <li><Link href="/features" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">Accounting</Link></li>
+              <li><Link href="/features" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">Admin / Back Office</Link></li>
+              <li><Link href="/features" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">Technician</Link></li>
+              <li><Link href="/features" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">HR / Recruiter</Link></li>
+              <li><Link href="/features" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">Construction</Link></li>
+              <li><Link href="/features" className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base">Design / Creative</Link></li>
             </ul>
           </div>
 

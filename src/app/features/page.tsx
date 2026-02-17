@@ -13,7 +13,7 @@ const SEOTrainingPage = () => {
         <div className="absolute inset-0 bg-[url('/images/banner.jpg')] bg-cover bg-center opacity-10"></div>
         <div className="relative max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-semibold text-white mb-6">
-           Seo Training Service
+           IT / Software Services
           </h1>
          
         </div>
@@ -22,56 +22,52 @@ const SEOTrainingPage = () => {
      
         <div className="space-y-6 text-gray-700">
           <h1 className="text-3xl font-bold text-black">
-            Seo Training Service
+            IT / Software Services
           </h1>
 
           <div className="space-y-6  text-[16px]">
             <p>
-              VRRITTIH Global Consulting provide the best SEO training agency in
-              Dubai. They can help you improve your digital marketing
-              skills. Look Our{" "}
+              VRRITTIH Global Consulting provides the best IT and software recruitment services in
+              Dubai. We can help you find top talent for your technology needs. Our{" "}
               <span className="font-bold text-black">
-                SEO training institute is in Dubai
+                IT recruitment agency in Dubai
               </span>
-              . It offers{" "}
+              {" "}offers{" "}
               <span className="font-bold text-black">
-                top best SEO training classes
+                specialized software developer hiring solutions
               </span>
-              . We designed these techniques and strategies to give you the
-              latest tools.
+              . We are designed to connect you with skilled professionals in the latest technologies.
             </p>
 
             <p>
-              At our institute, we pride ourselves on recognition. We are known
-              as the{" "}
+              At our agency, we pride ourselves on excellence. We are known as the{" "}
               <span className="font-bold text-black">
-                best SEO training company
+                best IT staffing company
               </span>
-              . We are in Dubai. Our curriculum is comprehensive. It covers
-              the basics of search engine optimization(SEO). It also covers
-              advanced tactics for getting the best website visibility.
+              {" "}in Dubai. Our services are comprehensive. They cover software development, system administration,
+              cloud computing, cybersecurity, and advanced IT infrastructure management.
             </p>
 
             <p>
-              You Will gain valuable insights from our{" "}
+              You will gain access to our{" "}
               <span className="font-bold text-black">
-                SEO training in institute in Dubai
+                extensive IT talent pool in Dubai
               </span>
-              . It covers keyword research, On-page optimization, link building,
-              Off-page and more. Our experienced instructors will guide you
-              through exercises and case studies. They will make sure you're
-              ready to tackle any SEO challenge.
+              . It includes full-stack developers, DevOps engineers, data scientists,
+              software architects, and more. Our experienced recruiters will guide you
+              through the hiring process with personalized solutions. We make sure you find
+              the perfect fit for any IT position.
             </p>
 
             <p>
-              Don't miss this opportunity to speed up your{" "}
+              Don't miss this opportunity to strengthen your{" "}
               <span className="font-bold text-black">
-                digital marketing career
+                technology team
               </span>
-              . Join our{" "}
-              <span className="font-bold text-black">SEO training classes</span>
-              today. and Boost your potential in the dynamic world of search
-              engine optimization.
+              . Partner with our{" "}
+              <span className="font-bold text-black">IT recruitment services</span>
+              {" "}today and unlock your potential in the dynamic world of software
+              and technology.
             </p>
           </div>
 

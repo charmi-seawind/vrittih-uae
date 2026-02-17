@@ -1,18 +1,8 @@
 "use client";
 
-import { Users, Shield } from "lucide-react";
-import {
-  GraduationCap,
-  FileText,
-  Briefcase,
-  Code,
-  Monitor,
-  Search,
-  Palette,
-  Wrench,
-  UserCheck,
-  Building,
-} from "lucide-react";
+
+import { Code, TrendingUp, Calculator, Briefcase, Wrench, Users, HardHat, Palette } from 'lucide-react';
+
 import { useRouter } from "next/navigation";
 const  s1 = "/images/service-1.jpg";
 const s2 = "/images/service-2.jpg";
@@ -29,80 +19,56 @@ const s12 = "/images/service-12.jpg";
 
 const ServicesPage = () => {
   const router = useRouter();
-  const services = [
+ const services = [
     {
-      title: "Training And Placement",
-      desc: "We create websites for you that are more than just looking good; Get a website that sells your brand!.",
-      icon: <GraduationCap className="w-8 h-8 text-white" />,
+      title: "IT / Software",
+      desc: "Explore opportunities in software development, programming, system administration, and IT support roles across various technologies.",
+      icon: <Code className="w-8 h-8 text-white" />,
       image: s1,
     },
     {
-      title: "Resume Writing",
-      desc: "That's what it means actually; ready for a multi-device world. Developing a website that is responsive is no longer a new requirement, its mandatory.",
-      icon: <FileText className="w-8 h-8 text-white" />,
+      title: "Sales & Marketing",
+      desc: "Find positions in business development, digital marketing, sales management, and brand promotion to grow your career.",
+      icon: <TrendingUp className="w-8 h-8 text-white" />,
       image: s2,
     },
     {
-      title: "Talent Acquisition",
-      desc: "VRRITTIH is a vastly growing recruitment consulting company in technical & non-technical Talent Acquisition.",
-      icon: <Users className="w-8 h-8 text-white" />,
+      title: "Accounting",
+      desc: "Discover accounting, finance, auditing, and bookkeeping positions with leading companies across industries.",
+      icon: <Calculator className="w-8 h-8 text-white" />,
       image: s3,
     },
     {
-      title: "Recruitments",
-      desc: "Standing out from the crowd is a key element to convincing your potential customers to work with you over your competitors.",
+      title: "Admin / Back Office",
+      desc: "Join administrative, data entry, office management, and back-office support roles in various organizations.",
       icon: <Briefcase className="w-8 h-8 text-white" />,
       image: s4,
     },
     {
-      title: "Php Training",
-      desc: "Vrrittih Global Consultancy, located in Ahmedabad, Gujarat is one of the leading consultancies offering training in programming languages.",
-      icon: <Code className="w-8 h-8 text-white" />,
+      title: "Technician",
+      desc: "Apply for technical maintenance, repair, installation, and field service positions across multiple sectors.",
+      icon: <Wrench className="w-8 h-8 text-white" />,
       image: s5,
     },
     {
-      title: "IT Training",
-      desc: "Knowing different technologies and staying updated about the changes & new arrivals in the technologies is critical for survival & growth.",
-      icon: <Monitor className="w-8 h-8 text-white" />,
+      title: "HR / Recruiter",
+      desc: "Pursue careers in human resources, talent acquisition, employee relations, and recruitment consulting.",
+      icon: <Users className="w-8 h-8 text-white" />,
       image: s6,
     },
     {
-      title: "SEO Training",
-      desc: "Vrrittih Global Consultancy is a leading consultancy providing SEO training in Ahmedabad with placement in Ahmadabad.",
-      icon: <Search className="w-8 h-8 text-white" />,
+      title: "Construction",
+      desc: "Find opportunities in civil engineering, project management, site supervision, and construction operations.",
+      icon: <HardHat className="w-8 h-8 text-white" />,
       image: s7,
     },
     {
-      title: "Web Design Training",
-      desc: "Vrrittih global consultancy offers web designing training in Ahmedabad this is the place of opportunities where every aspiring student is directed towards success.",
+      title: "Design / Creative",
+      desc: "Explore graphic design, UI/UX, content creation, and creative roles to showcase your artistic talents.",
       icon: <Palette className="w-8 h-8 text-white" />,
       image: s8,
     },
-    {
-      title: "Live Project Training",
-      desc: "Vrrittih global consultancy is one of the consultancies is one of the consultancies who provides training on a Live Project Training in Ahmadabad & our prime goal is to provide employment to our trainer.",
-      icon: <Wrench className="w-8 h-8 text-white" />,
-      image: s9,
-    },
-    {
-      title: "Talent Deployment",
-      desc: "The world is full of opportunities and you never know when the opportunity knocks your door.",
-      icon: <UserCheck className="w-8 h-8 text-white" />,
-      image: s10,
-    },
-    {
-      title: "Recruitment Process Outsourcing",
-      desc: "We use methods like strategy analysis, Geographical survey, industry mapping, Competitor analysis, Cultural analysis, Retention strategies and many others to achieve the desired results.",
-      icon: <Building className="w-8 h-8 text-white" />,
-      image: s11,
-    },
-    {
-      title: "Employee Background Verification",
-      desc: "Employee background verification is vital for maintaining Safety, reputation and integrity in the organization.",
-      icon: <Shield className="w-8 h-8 text-white" />,
-      image: s12,
-    },
-  ];
+];
 
   return (
     <div className="min-h-screen bg-white">

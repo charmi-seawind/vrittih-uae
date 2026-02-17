@@ -220,7 +220,7 @@ const contactInfo = [
                   Visit Our Office
                 </h2>
                 <p className="text-gray-600">
-                  We're located in the heart of Dubai, Gujarat. Feel free to
+                  We're located in the heart of Dubai, Dubai . Feel free to
                   visit us during our working hours.
                 </p>
               </div>

@@ -8,8 +8,8 @@ import { Button } from "@/components/ui/button";
 const blogPosts = [
   {
     id: 1,
-    title: "Why Our SEO Training in Ahmedabad Stands Out in 2025",
-    excerpt: "The SEO training in Ahmedabad we offer transforms beginners into industry-ready experts in just 45 days. In the increasingly competitive field of SEO and SEM, quality education with practical experience has become essential for career success.",
+    title: "Why Our SEO Training in Dubai Stands Out in 2025",
+    excerpt: "The SEO training in Dubai we offer transforms beginners into industry-ready experts in just 45 days. In the increasingly competitive field of SEO and SEM, quality education with practical experience has become essential for career success.",
     image: "/images/banner-1.avif",
     category: "Blog",
     readTime: "5 min read",

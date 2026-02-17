@@ -630,7 +630,7 @@ const MultiStepOnboardingForm = ({ onComplete, isAdminCreated = false }: MultiSt
             </div>
 
             {!showOtpVerification && (
-              <div className="space-y-4 pt-6 border-t">
+              <div className="space-y-6 border-t">
                 <div className="flex items-center justify-between">
                   {currentStep > 1 && currentStep < 4 ? (
                     <Button

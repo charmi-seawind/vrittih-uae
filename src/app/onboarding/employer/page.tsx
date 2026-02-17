@@ -32,7 +32,7 @@ const EmployerOnboardingPage = () => {
   </div>
       <article className="dark:bg-black bg-[#164bac]   place-content-center">
         <AnimateWrapper className="relative">
-          <div className="mx-auto max-w-5xl w-full px-4 pt-8 pb-6">
+          <div className="mx-auto max-w-5xl w-full px-4 pt-1 pb-1">
             {/* Mobile Logo - only visible on small screens */}
             <div className="xl:hidden mb-0 text-center">
               <div 
