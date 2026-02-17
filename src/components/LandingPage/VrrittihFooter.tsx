@@ -102,7 +102,7 @@ const VrrittihFooter = () => {
         <div className="border-t border-gray-800 mt-8 pt-6 sm:pt-8">
           <div className="text-center px-2">
             <div className="text-gray-400 text-sm flex flex-wrap items-center justify-center gap-1 leading-relaxed">
-              ©2025 All rights reserved. Website Design & Developed By
+              ©2026 All rights reserved. Website Design & Developed By
               <a
                 href="https://seawindsolution.com"
                 target="_blank"
