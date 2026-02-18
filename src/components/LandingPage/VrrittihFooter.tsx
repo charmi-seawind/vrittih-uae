@@ -90,7 +90,7 @@ const VrrittihFooter = () => {
 
               <li className="flex items-center justify-center sm:justify-start gap-2 text-gray-400">
                 <HiPhone className="h-5 w-5 flex-shrink-0" />
-                <span className="text-sm sm:text-base">+918866009227</span>
+                <span className="text-sm sm:text-base">+971 50 678 7900</span>
               </li>
 
               <li className="flex items-start justify-center sm:justify-start gap-2 text-gray-400">

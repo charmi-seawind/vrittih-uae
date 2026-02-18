@@ -56,7 +56,7 @@ export default function Header() {
 
               <div className="flex items-center gap-2">
                 <FaPhone size={12} />
-                <span className="whitespace-nowrap">+91 8866009227</span>
+                <span className="whitespace-nowrap">+971 50 678 7900</span>
               </div>
 
               <span className="hidden md:inline opacity-40">|</span>
