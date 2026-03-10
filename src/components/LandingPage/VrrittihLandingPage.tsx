@@ -565,7 +565,7 @@ const VrrittihLandingPage = () => {
       >
         <div className="absolute inset-0 z-0 bg-white/70" />
 
-        <div className="relative z-10 max-w-[1500px] mx-auto px-3 sm:px-4 md:px-6 pt-8 sm:pt-10 pb-10">
+        <div className="relative z-10 max-w-[1500px] mx-auto px-3 sm:px-4 md:px-10 pt-8 sm:pt-10 pb-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-16 items-center">
             <div className="order-1">
               <div className="mb-6">
@@ -661,7 +661,7 @@ const VrrittihLandingPage = () => {
       </section>
 
       <section className="py-12 bg-white">
-        <div className="max-w-[1500px] mx-auto px-4 sm:px-6">
+        <div className="max-w-[1500px] mx-auto px-4 sm:px-10">
           {/* Header Section */}
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-8 gap-4">
             <div>
@@ -729,7 +729,7 @@ const VrrittihLandingPage = () => {
       </section>
 
       <section className="pb-10 bg-gradient-to-br from-gray-50 to-blue-50">
-        <div className="max-w-[1500px] mx-auto px-4 sm:px-6 ">
+        <div className="max-w-[1500px] mx-auto px-4 sm:px-10 ">
           <div className="text-start py-5">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 ">
               Our Featured
@@ -778,7 +778,7 @@ const VrrittihLandingPage = () => {
       </section>
 
       <section className="py-12 sm:py-16 bg-white">
-        <div className="max-w-[1500px] mx-auto px-3 sm:px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-center">
+        <div className="max-w-[1500px] mx-auto px-3 sm:px-4 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-center">
           <div>
             <h2
               className="
@@ -889,7 +889,7 @@ const VrrittihLandingPage = () => {
         <div className="absolute inset-0" />
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/95 via-blue-800/90 to-blue-700/95" />
 
-        <div className="relative max-w-[1500px] mx-auto px-3 sm:px-4 md:px-6">
+        <div className="relative max-w-[1500px] mx-auto px-3 sm:px-4 md:px-10">
           <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
             <h2
               className="
@@ -936,9 +936,9 @@ const VrrittihLandingPage = () => {
             p-6 
             sm:p-8 
             lg:p-10 
-            hover:translate-y-[-6px] 
-            transition-all 
-            duration-300
+            
+         
+            shadow-[0_0_40px_rgba(249,115,22,0.15)] 
           "
             >
               <div className="mb-8 sm:mb-10">
@@ -973,8 +973,11 @@ const VrrittihLandingPage = () => {
                 py-3 
                 sm:py-4 
                 rounded-xl 
+                hover:translate-y-[-6px] 
                 transition-all 
-                hover:scale-[1.02]
+                            transition-all 
+            duration-300
+                
               "
                 >
                   CONTACT US
@@ -984,7 +987,7 @@ const VrrittihLandingPage = () => {
 
             <div
               className="
-            relative 
+          
             bg-white/15 
             backdrop-blur-xl 
             border 
@@ -993,32 +996,12 @@ const VrrittihLandingPage = () => {
             p-6 
             sm:p-8 
             lg:p-10 
-            scale-100 
-            lg:scale-[1.03] 
+          
+        
             shadow-[0_0_40px_rgba(249,115,22,0.15)]
           "
             >
-              <div
-                className="
-              absolute 
-              -top-3 
-              sm:-top-4 
-              right-4 
-              sm:right-6 
-              bg-orange-500 
-              text-white 
-              text-[10px] 
-              sm:text-xs 
-              font-bold 
-              px-3 
-              sm:px-4 
-              py-1 
-              rounded-full 
-              shadow-lg
-            "
-              >
-                Most Popular
-              </div>
+              
 
               <div className="mb-8 sm:mb-10">
                 <h3 className="text-white text-xl sm:text-2xl font-bold mb-2 sm:mb-3">
@@ -1165,7 +1148,7 @@ const VrrittihLandingPage = () => {
 
         <div className="absolute inset-0 bg-blue-900/90" />
 
-        <div className="relative max-w-[1500px] mx-auto px-3 sm:px-4 md:px-6">
+        <div className="relative max-w-[1500px] mx-auto px-3 sm:px-4 md:px-10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 mb-8 sm:mb-10">
             <h2
               className="
